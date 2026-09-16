@@ -3,15 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Real Time Tracker</title>
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-search/4.0.0/leaflet-search.src.min.css" integrity="sha512-9eyGJRX2iwqhgtO4r4779lnhgQL9PygSF6k5KCwsinBQQ9uM+fDxsd2IEx3DJfwgd/+IPeMgUxwwIA/YTBRgKA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Leaflet Search CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-search/4.0.0/leaflet-search.src.min.css"
+        integrity="sha512-9eyGJRX2iwqhgtO4r4779lnhgQL9PygSF6k5KCwsinBQQ9uM+fDxsd2IEx3DJfwgd/+IPeMgUxwwIA/YTBRgKA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
 </head>
+
 <body>
+
     <div id="map"></div>
 
+    <!-- Leaflet JS - MUST COME FIRST -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-search/4.0.0/leaflet-search.src.min.js" integrity="sha512-bvj1IpGlCrv1roL3jhLtM9egFQ+2mIs7hdGOEyDymfXOg6T/x53sTYqtN3Mo1w0j92OXvVfLUPMIBRHV4Z06dw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <!-- Leaflet Search JS -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-search/4.0.0/leaflet-search.src.min.js"
+        integrity="sha512-bvj1IpGlCrv1roL3jhLtM9egFQ+2mIs7hdGOEyDymfXOg6T/x53sTYqtN3Mo1w0j92OXvVfLUPMIBRHV4Z06dw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+
+    <!-- Socket.IO -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.3/socket.io.min.js"
+        integrity="sha512-IuTYerRCfcnsJLg/IV1NNjdI4YgPjMZG1L06TP4mcutUKLMNFmnLwqVREbfllz3ywbPEttOKJ2OBNN8pWhjf+Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+
+    <!-- Your JavaScript -->
+    <script src="/js/script.js"></script>
+
 </body>
 </html>
